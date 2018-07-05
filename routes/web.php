@@ -44,3 +44,7 @@ Route::get('/profile',function()
 {
     return view('profile');
 });
+Route::get('/extra',function()
+{
+    return view('extra');
+});
