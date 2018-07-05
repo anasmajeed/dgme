@@ -29,46 +29,26 @@ class CreateProjectsTable extends Migration
           $table->dropForeign(['sponsor_agency_id']);
           $table->foreign('sponsor_agency_id')
               ->references('id')->on('sponsor_agencies')
-<<<<<<< HEAD
-              ->onDelete('set null')
-              ->onUpdate('set null');
-=======
               ->onDelete('no action')
               ->onUpdate('no action');
->>>>>>> 5a0a21b84f5c29d590918fd2552f2e44a313e876
           $table->foreign('project_type_id')->references('id')->on('project_types');
           $table->dropForeign(['project_type_id']);
           $table->foreign('project_type_id')
               ->references('id')->on('project_types')
-<<<<<<< HEAD
-              ->onDelete('set null')
-              ->onUpdate('set null');
-=======
               ->onDelete('no action')
               ->onUpdate('no action');
->>>>>>> 5a0a21b84f5c29d590918fd2552f2e44a313e876
           $table->foreign('executing_agency_id')->references('id')->on('executing_agencies');
           $table->dropForeign(['executing_agency_id']);
           $table->foreign('executing_agency_id')
               ->references('id')->on('executing_agencies')
-<<<<<<< HEAD
-              ->onDelete('set null')
-              ->onUpdate('set null');
-=======
               ->onDelete('no action')
               ->onUpdate('no action');
->>>>>>> 5a0a21b84f5c29d590918fd2552f2e44a313e876
           $table->foreign('created_by')->references('id')->on('users');
           $table->dropForeign(['created_by']);
           $table->foreign('created_by')
               ->references('id')->on('users')
-<<<<<<< HEAD
-              ->onDelete('set null')
-              ->onUpdate('set null');
-=======
               ->onDelete('no action')
               ->onUpdate('no action');
->>>>>>> 5a0a21b84f5c29d590918fd2552f2e44a313e876
       });
 
       Schema::create('project_details', function (Blueprint $table) {
