@@ -26,15 +26,6 @@ Route::get('/calender',function()
 {
     return view('calender');
 });
-Route::get('/loginpage',function()
-{
-    return view('loginpage');
-});
-Route::get('/register',function()
-{
-    return view('register');
-});
-
 Route::get('/main',function()
 {
     return view('main');
