@@ -17,26 +17,3 @@ Route::get('/', function () {
 
 Auth::routes();
 Route::get('/conversations/{id}', 'ChatController@show');
-
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/admin',function()
-{
-    return view('extra');
-});
-Route::get('/calender',function()
-{
-    return view('calender');
-});
-Route::get('/loginpage',function()
-{
-    return view('loginpage');
-});
-Route::get('/main',function()
-{
-    return view('main');
-});
-
-Route::get('/profile',function()
-{
-    return view('profile');
-});
