@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+Route::get('/conversations/{id}', 'ChatController@show');
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/admin',function()
@@ -30,11 +31,6 @@ Route::get('/loginpage',function()
 {
     return view('loginpage');
 });
-Route::get('/register',function()
-{
-    return view('register');
-});
-
 Route::get('/main',function()
 {
     return view('main');
